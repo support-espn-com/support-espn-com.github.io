@@ -12,7 +12,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MPJZDRS8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-8MPJZDRS8S');
+</script>
     <!-- asa -->
 
     <meta name="description" content="Facing espn.com/activate issues? Find quick solutions for activation, troubleshooting, supported devices, login problems, ESPN+ activation, TV provider linking, and more.">
@@ -360,6 +368,36 @@ a{
       </div>
     </section>
   </main>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const currentDomain = window.location.hostname;
+    const disclaimer = `
+    <div id="disclaimer-footer">
+    <p><strong>Disclaimer:</strong> This website <a href="https://${currentDomain}/" target="_blank">${currentDomain}</a> includes the word "espn" in its domain name for informational purposes only. However, it is not affiliated with or endorsed by Intuit Inc., the creators of espn.
+    <strong>espn is a registered trademark.</strong> All references to espn on this website are solely for descriptive purposes.
+    We do not sell, promote, or distribute espn or any related products. For official information about espn, please visit the official <a href="https://www.espn.com/" target="_blank" rel="nofollow">espn website</a>.</p>
+    </div>
+    `;
+    document.body.insertAdjacentHTML("beforeend", disclaimer);
+    const style = document.createElement('style');
+    style.innerHTML = `
+    #disclaimer-footer {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+    `;
+    document.head.appendChild(style);
+    });
+    </script>
   <script src="espn-faq.js"></script>
 </body>
 </html>
